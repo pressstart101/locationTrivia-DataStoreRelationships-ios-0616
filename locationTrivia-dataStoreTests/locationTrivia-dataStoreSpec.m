@@ -126,8 +126,8 @@ describe(@"locationTriviaDataStore", ^{
             NSIndexPath *row = [NSIndexPath indexPathForRow:0 inSection:0];
             [tester tapRowAtIndexPath:row inTableViewWithAccessibilityIdentifier:@"Locations Table"];
             table = (UITableView *)[tester waitForViewWithAccessibilityLabel:@"Trivia Table"];
-            [tester tapViewWithAccessibilityLabel:@"Add Trivia Button"];
-        });
+        });            [tester tapViewWithAccessibilityLabel:@"Add Trivia Button"];
+
         
         it(@"Should Dismiss View Controller when cancel button tapped", ^{
             [tester tapViewWithAccessibilityLabel:@"Cancel Button"];
